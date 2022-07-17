@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  graciousassignment:
+    image: graciousassignment-akash
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./pages:/app/pages
+      - ./public:/app/public
+      - ./styles:/app/styles
+      - ./lib:/app/lib
+      - ./components:/app/components
+      - ./tailwind.config.js:/app/tailwind.config.js
+      - ./next.config.js:/app/next.config.js
