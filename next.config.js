@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     domains: [`rickandmortyapi.com`],
   },
-  experimental: {
-    outputStandalone: true,
+  output: {
+    standalone: true,
   },
 };
 

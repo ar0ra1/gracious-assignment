@@ -33,7 +33,11 @@ export default function Home({ fallback }) {
       </main>
 
       <footer className="flex p-5 text-white justify-evenly bg-rmRed">
-        <a href="" target="_blank" rel="nofollow noreferrer">
+        <a
+          href="https://github.com/ar0ra1/gracious-assignment"
+          target="_blank"
+          rel="nofollow noreferrer"
+        >
           GitHub
         </a>
         <p>By Akash Arora</p>

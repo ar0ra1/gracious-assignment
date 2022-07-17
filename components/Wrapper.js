@@ -2,7 +2,7 @@ import React, { Suspense, useCallback, useMemo, useState } from "react";
 import useSWR from "swr";
 import { BASE_QUERY } from "../lib/useGraphQLRequest";
 import { Characters } from "./Characters";
-import { RandomQuote } from "./RandomQuote";
+// import { RandomQuote } from "./RandomQuote";
 import { Select } from "./Select";
 import { TransitionState } from "./TransitionState";
 
@@ -77,7 +77,7 @@ export const Wrapper = () => {
                 data={dimensions}
               />
             </div>
-            <RandomQuote />
+            {/* <RandomQuote /> */}
           </div>
           <Suspense fallback={<TransitionState type="loading" />}>
             <Characters filter={selectedFilter} />
